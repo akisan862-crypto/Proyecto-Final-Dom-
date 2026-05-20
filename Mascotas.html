@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Patita Blog - Red Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-area">
+                <span class="logo-icon">🐾</span>
+                <h1>Mi Patita</h1>
+            </div>
+            <div class="search-bar">
+                <span>🔍</span>
+                <input type="text" placeholder="Buscar perritos, tips, etc...">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        
+        <aside class="left-sidebar">
+            <nav class="side-menu">
+                <a href="#" class="menu-item active"><span>🏠</span> Inicio</a>
+                <a href="#" class="menu-item"><span>✨</span> Explorar</a>
+                <a href="#" class="menu-item"><span>🔔</span> Notificaciones</a>
+                <a href="#" class="menu-item"><span>🔖</span> Guardados</a>
+                <a href="#" class="menu-item"><span>🐾</span> Mi Perfil</a>
+            </nav>
+            <button class="btn-post-menu">Publicar</button>
+        </aside>
+
+        <main class="center-feed">
+            <article class="blog-post">
+                <div class="post-header">
+                    <img src="https://placedog.net/50/50?id=10" alt="Avatar Autor" class="author-avatar">
+                    <div class="post-info">
+                        <h3>Dra. Catlover</h3>
+                        <p class="post-handle">@expertomascotas • Hace 2 horas</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h2>5 Tips para mantener a tu Firulais feliz este verano ☀️🐶</h2>
+                    <p>El verano ya está aquí y nuestras mascotas sufren el calor tanto como nosotros. Aquí te dejo mis consejos rápidos:</p>
+                    <ul>
+                        <li>💧 Agua fresca y limpia siempre disponible.</li>
+                        <li>🐾 Evita paseos en las horas centrales del día (¡el asfalto quema!).</li>
+                        <li>🧊 ¡Helados caseros aptos para perros!</li>
+                    </ul>
+                    <p>¿Tienes algún otro truco? ¡Déjalo en los comentarios abajo! 👇</p>
+                </div>
+            </article>
+
+            <section class="comments-section">
+                <h3>Comentarios de la comunidad</h3>
+
+                <form id="comment-form" class="comment-reply-form">
+                    <img src="https://api.dicebear.com/8.x/notionists/svg?seed=TuUsuario" alt="Tu Avatar" class="my-avatar">
+                    <div class="form-inputs">
+                        <textarea id="comment-input" placeholder="¿Qué opinas sobre este post? ✨🐾" required></textarea>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-comment">Comentar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="comments-container">
+                    
+                    <div class="comment-box">
+                        <img src="https://api.dicebear.com/8.x/adventurer/svg?seed=Lola" alt="Avatar Usuario" class="user-avatar">
+                        <div class="comment-main">
+                            <div class="comment-header">
+                                <span class="comment-username">Lola la Pug</span>
+                                <span class="comment-date">• 18/05/2026, 10:15</span>
+                            </div>
+                            <p class="comment-text">¡Me encantó el tip del helado! A mi perrito le hice uno de caldo de pollo sin sal y lo amó. 🍦🐶</p>
+                            <button class="delete-btn" onclick="this.parentElement.parentElement.remove()">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <div class="comment-box">
+                        <img src="https://api.dicebear.com/8.x/adventurer/svg?seed=Michi" alt="Avatar Usuario" class="user-avatar">
+                        <div class="comment-main">
+                            <div class="comment-header">
+                                <span class="comment-username">AmanteDeGatos</span>
+                                <span class="comment-date">• 18/05/2026, 09:30</span>
+                            </div>
+                            <p class="comment-text">Yo suelo mojarle una toalla y dejarla en el piso, a mi gato le gusta acostarse ahí cuando hace mucho calor.</p>
+                            <button class="delete-btn" onclick="this.parentElement.parentElement.remove()">Eliminar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-sidebar">
+            
+            <div class="widget photo-library">
+                <h3>📸 Galería Perruna</h3>
+                <div class="photo-grid">
+                    <img src="https://placedog.net/100/100?id=1" alt="Perrito 1">
+                    <img src="https://placedog.net/100/100?id=2" alt="Perrito 2">
+                    <img src="https://placedog.net/100/100?id=3" alt="Perrito 3">
+                    <img src="https://placedog.net/100/100?id=4" alt="Perrito 4">
+                    <img src="https://placedog.net/100/100?id=5" alt="Perrito 5">
+                    <img src="https://placedog.net/100/100?id=6" alt="Perrito 6">
+                </div>
+            </div>
+
+            <div class="widget more-articles">
+                <h3>📖 Más Artículos</h3>
+                <a href="#" class="article-link">
+                    <p class="article-title">¿Cómo limpiar las orejitas de tu gato? 🐱</p>
+                    <span class="article-views">1.2k vistas</span>
+                </a>
+                <a href="#" class="article-link">
+                    <p class="article-title">Las 3 mejores correas para pasear seguros 🦮</p>
+                    <span class="article-views">850 vistas</span>
+                </a>
+                <a href="#" class="article-link">
+                    <p class="article-title">Receta: Galletas de avena para mascotas 🍪</p>
+                    <span class="article-views">3.4k vistas</span>
+                </a>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
